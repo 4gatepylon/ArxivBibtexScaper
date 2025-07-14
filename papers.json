@@ -1,0 +1,282 @@
+{
+    "owasp_infosec": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "",
+                "key_idea": ""
+            }
+        ]
+    },
+    "jailbreaks": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "",
+                "key_idea": ""
+            }
+        ]
+    },
+    "trojans": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "",
+                "key_idea": ""
+            }
+        ]
+    },
+    "emergent": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "https://arxiv.org/abs/2501.13011v2",
+                "key_idea": "efforts have been made to avoid reward hacking by changing the reward function to be myopic"
+            },
+            {
+                "href": "https://arxiv.org/pdf/2412.14093?",
+                "key_idea": "Alignment faking in large language models is possible and actually can arise naturally given the right optimization pressure/conditions."
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            }
+
+        ]
+    },
+    "passive_scoping": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "https://www.alignmentforum.org/posts/mFAvspg4sXkrfZ7FA/deep-forgetting-and-unlearning-for-safely-scoped-llms",
+                "key_idea": "Passive scoping is a promising idea to, in principle, make LLMs safer by default"
+            },
+            {
+                "href": "https://www.lesswrong.com/posts/wvEJ5mRbBEDxuiHrL/scoping-llms",
+                "key_idea": "Passive scoping is a promising idea to do, cite this along with casper's post above from alignment forum (deep-forgetting-and-unlearning-...); basically these support the same thesis"
+            },
+            {
+                "href": "https://arxiv.org/pdf/2410.21597",
+                "key_idea": "This paper specifically introduces the idea of passive scoping (although it has been mentioned before). They assume, however, that they have some degree of knowledge of the reject set. They evaluate different methods you can use. Basically they find that when there is a really small reject set (i.e. you don't have a lot of data) circuit breakers are pretty good, but otherwise a literal latent linear probe is good."
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            }
+        ]
+    },
+    "prerain_time_interventions": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "https://arxiv.org/pdf/2503.07639",
+                "key_idea": "These guys train an MoE to be more inherently interpretable and find signs that it is indeed more interpretable. This hopefully means that you might be able to do steering or clamping of the neurons in such a way as to remove knowledge or capabilities (you could also maybe turn 'off' an expert)."
+            },
+            {
+                "href": "https://arxiv.org/abs/2410.04332",
+                "key_idea": "These guys route gradients based on certain criteria during training time to try and make neural networks modular (i.e. such that you can remove sections where you routed certain gradients); it is not super successful; this is hard to do"
+            },
+            {
+                "href": "https://arxiv.org/pdf/2404.08417",
+                "key_idea": "While this may not be pretrain-time, it is finetunue time. It looks like they use LoRA adapters to try and localize the learning of knew facts/knowledge in the model. This makes it easy to swap adaptros to remove or add back in knowledge (thereby enabling unlearning thatt is more robust)."
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            }
+        ]
+    },
+    "input_output_defenses": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "https://arxiv.org/abs/2404.13208",
+                "key_idea": "These guys basically propose methods to train instruction hierarchies in which LLMs learn to follow instructions only if they don't conflict with higher level instructions. This is a generalization of the idea of the system prompt. It is limited insofar as jailbreaks get around it; the LLM is relied upon to make the decision as to whether or not to follow an instruction. They cite the idea of operating system hierarchies of users as an analogy. It looks like they train this in so on some level it's not really an input/out method..."
+            },
+            {
+                "href": "https://arxiv.org/abs/2503.18813",
+                "key_idea": "CaMeL explicitly extracts the control and data flows from the (trusted) query; therefore, the untrusted data retrieved by the LLM can never impact the program flow. To further improve security, CaMeL relies on a notion of a capability to prevent the exfiltration of private data over unauthorized data flows. We demonstrate effectiveness of CaMeL by solving 67% of tasks with provable security in AgentDojo [NeurIPS 2024], a recent agentic security benchmark"
+            },
+            {
+                "href": "https://arxiv.org/pdf/2504.11703v1",
+                "key_idea": "Emphasizes the importance of the principle of least privilege. Introduce Progent, the first privilege control mechanism for LLM agents. The heart of Progent is a domain- specific language for flexibly expressing privilege control policies applied during agent execution. Reduces attack success rate from 41.2% to 2.2% on the Agent- Dojo benchmark"
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            }
+        ]
+    },
+    "unlearning": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "https://ieeexplore.ieee.org/document/9519428",
+                "key_idea": "These guys present unlearning and propose an algorithm"
+            },
+            {
+                "href": "https://arxiv.org/abs/2402.08787",
+                "key_idea": "They seem to evaluate unlearning and push forward a thesis that it is going to be important... has it been? idk"
+            }
+        ]
+    },
+    "mechanistic_interpretability_circuit_analysis": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "https://arxiv.org/abs/2410.02760",
+                "key_idea": "ROME: they were able to, in a finegrained way, remove the knowledge of specific facts from an LLM (but I'm not sure if there were some limitations later found; I think there were...?)"
+            }
+        ]
+    },
+    "probing_latent_classifiers": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "",
+                "key_idea": ""
+            }
+        ]
+    },
+    "anomaly_detection": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "https://arxiv.org/pdf/2502.02260",
+                "key_idea": "adversarial ml has struggled to make progress and the problem is even harder now"
+            }
+        ]
+    },
+    "filtering_steering_latent_spaces": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "https://arxiv.org/pdf/2406.04313",
+                "key_idea": "Circuit breakers: a method to steer the latent space of a model to resist attacks. Requires retain and forget set. Tries to send forget set to be orthogonal to the original activations."
+            }
+        ]
+    },
+    "refusal_training": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "",
+                "key_idea": ""
+            }
+        ]
+    },
+    "control": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "https://arxiv.org/pdf/2501.17315",
+                "key_idea": ""
+            },
+            {
+                "href": "https://arxiv.org/pdf/2504.10374",
+                "key_idea": ""
+            },
+            {
+                "href": "https://arxiv.org/pdf/2504.05259",
+                "key_idea": ""
+            },
+            {
+                "href": "https://arxiv.org/pdf/2406.10162",
+                "key_idea": ""
+            },
+            {
+                "href": "https://arxiv.org/pdf/2409.07985",
+                "key_idea": ""
+            },
+            {
+                "href": "https://arxiv.org/pdf/2312.06942",
+                "key_idea": ""
+            },
+            {
+                "href": "https://arxiv.org/pdf/2412.12480",
+                "key_idea": ""
+            },
+            {
+                "href": "https://arxiv.org/pdf/2411.03336",
+                "key_idea": ""
+            },
+            {
+                "href": "https://arxiv.org/pdf/1810.08575",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            },
+            {
+                "href": "",
+                "key_idea": ""
+            }
+        ]
+    },
+    "jailbreak_tax": {
+        "overall_thesis": "",
+        "citations": [
+            {
+                "href": "https://arxiv.org/pdf/2504.10694",
+                "key_idea": "Not all jailbreaks actually retain utility. In this paper they make a benchcmark to measure whether or not post-jailbreak the model is useful to attacks and find that often it isn't. They call this phenomenon the 'jailbreak tax'."
+            }
+        ]
+    }
+}
